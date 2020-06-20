@@ -1,0 +1,260 @@
+html, body{
+	height: 100%;
+}
+body{
+	margin: 0;
+	padding: 0;
+	font-family: 'Quicksand', sans-serif;
+}
+.container{
+	position: relative;
+	height: 85%;
+	width: 100%;
+	box-sizing: border-box;
+	padding: 30px;
+}
+.score-container{
+	position: relative;
+	margin: 0 auto;
+	width: 150px;
+	height: 40px;
+	color: rgb(0, 0, 0);
+}
+#score{
+
+	text-align: center;
+	font-size: 30px;
+
+}
+.user{
+	position: absolute;
+	left: 0;
+	top: 30%;
+	transform: translate(-100%, -50%);
+	background-color: #8493eb;
+	width: 80px;
+	height: 50px;
+	font-size: 20px;
+	padding: 10px 10px;
+	box-sizing: border-box;
+
+}
+.com{
+	position: absolute;
+	right: 0;
+	top: 30%;
+	transform: translate(100%, -50%);
+	background-color: #8493eb;
+	width: 80px;
+	height: 50px;
+	font-size: 20px;
+	padding: 10px 10px;
+	box-sizing: border-box;
+}
+.buttons{
+	width: 280px;
+	position: absolute;
+	top: 20%; 
+	left: 50%;
+	transform: translateX(-50%);
+}
+.bn{
+	width: 80px;
+	height: 80px;
+    margin :5px;
+    border: 3px solid #34495e;
+    border-radius: 50%;
+    color: #34495e;
+    font-size: 40px;
+    background-color: white;
+    cursor: pointer;
+    outline: none;
+    transition: .3s;
+}
+@media (max-width: 767.98px){
+    .bn {
+		margin :1px;
+		font-size: 25px;
+	}
+
+}
+
+@media (min-width: 1200px){
+    .bn {
+		margin :5px;
+		font-size: 40px;
+
+  }
+}
+.bn:hover{
+    background-color: #34495e;
+    border-color: white;
+    color: white;
+}
+#challenge{
+	position: absolute;
+	top: 30%;
+	left: 50%;
+	transform: translateX(-50%);
+	width: 540px;
+	height: 40%;
+	display: none;
+}
+#you{
+	position: relative;
+	width: 37.5%;
+	font-size: 50px;
+}
+#com{
+	position: relative;
+	width: 37.5%;
+	font-size: 50px;
+}
+#YourObject{
+	position: absolute;
+	top: 45%;
+
+	transform: translate(-50%, -50%);
+
+	padding-top: 20px;
+	border: 3px solid #34495e;
+    border-radius: 50%;
+    color: #34495e;
+    background-color: white;
+    box-sizing: border-box;
+    text-align: center;
+}
+@media (max-width: 767.98px){
+    #YourObject {
+		width: 80px;
+		height: 80px;
+		font-size: 30px;
+		left: 70%;
+	}
+
+}
+
+@media (min-width: 1200px){
+    #YourObject {
+		width: 110px;
+		height: 110px;
+		font-size: 50px;		
+		left: 50%;
+	}
+}
+#ComObject{
+	position: absolute;
+	top: 45%;
+
+	transform: translate(-50%, -50%);
+
+	padding-top: 20px;
+	border: 3px solid #34495e;
+    border-radius: 50%;
+    color: #34495e;
+    background-color: white;
+    box-sizing: border-box;
+    text-align: center;
+}
+@media (max-width: 767.98px){
+    #ComObject {
+		width: 80px;
+		height: 80px;
+		font-size: 30px;
+		left: 30%;
+	}
+
+}
+
+@media (min-width: 1200px){
+    #ComObject {
+		width: 110px;
+		height: 110px;
+		font-size: 50px;
+		left: 50%;
+	}
+}
+#result{
+	position: relative;
+	width: 25%;
+}
+#result p{
+	position: absolute;
+	top: 45%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	color: rgb(0, 0, 0);
+	font-size: 20px;
+	width: 100%;
+	margin: 0;
+	text-align: center;
+}
+.who{
+	position: absolute;
+	bottom: 5%;
+	left: 50%;
+	transform: translateX(-50%);
+	color: rgb(7, 7, 7);
+	font-size: 30px;
+}
+@media (max-width: 767.98px){
+    .who1 {
+		left: 70%;
+		font-size: 20px;
+	}
+
+}
+@media (max-width: 767.98px){
+    .who2 {
+		left: 30%;
+		font-size: 20px;
+	}
+
+}
+.green{
+	width: 70px;
+	height: 70px;
+    margin: 5px;
+    border: 3px solid green;
+    box-shadow: 0 0 10px green;
+    border-radius: 50%;
+    color: #34495e;
+    font-size: 35px;
+    background-color: white;
+    cursor: pointer;
+    outline: none;
+    transition: .3s;
+}
+.red{
+	width: 70px;
+	height: 70px;
+    margin: 5px;
+    border: 3px solid red;
+    box-shadow: 0 0 10px red;
+    border-radius: 50%;
+    color: #34495e;
+    font-size: 35px;
+    background-color: white;
+    cursor: pointer;
+    outline: none;
+    transition: .3s;
+}
+.gray{
+	width: 70px;
+	height: 70px;
+    margin: 5px;
+    border: 3px solid #292928;
+    box-shadow: 0 0 10px #292928;
+    border-radius: 50%;
+    color: #34495e;
+    font-size: 35px;
+    background-color: white;
+    cursor: pointer;
+    outline: none;
+    transition: .3s;
+}
+
+
+
+
+
